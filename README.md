@@ -17,6 +17,7 @@ This project is still in progress and far from ready. I will continue working on
  - `cd` into the folder
  - Run `cd build`
  - Run `cmake ..` to configure
+     - Optionally you can run `cmake -DBUILD_TESTS=1 ..` to include the unit tests also
  - Run `cmake --build .` to build the binaries
  - The executable, called `Asteroids` will be in the _build/bin_ folder, along with the necessary .dll-s
 
