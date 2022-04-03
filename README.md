@@ -1,5 +1,7 @@
 # Asteroids
-Arcade asteroids game written in C++, using SDL
+Arcade asteroids game written in C++, using SDL. 
+
+This project is still in progress and far from ready. I will continue working on it as I have time.
 
 ## Prerequisites
 
@@ -21,3 +23,16 @@ Arcade asteroids game written in C++, using SDL
 ## Tests
 
  - Tested on Windows 10
+
+## Future tasks
+
+- [ ] Start documentation
+- [ ] Increase test coverage
+- [ ] Handle inputs
+- [ ] Proper Entity Component System
+- [ ] Add collision detection
+- [ ] Refactor to better match the Model-View-Component pattern and use more modern C++ feature if possible
+- [ ] Main menu with settings, like framerate cap or turn music on/off
+- [ ] Include audio
+- [ ] Animate explosions
+

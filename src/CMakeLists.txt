@@ -1,4 +1,4 @@
-add_executable(${PROJECT_NAME} main.cpp Game.h Game.cpp)
+add_executable(${PROJECT_NAME} main.cpp Game.h Game.cpp TextureManager.h TextureManager.cpp Entity.h Entity.cpp vec2.h)
 
 add_dependencies(${PROJECT_NAME} SDL2main SDL2)
 
