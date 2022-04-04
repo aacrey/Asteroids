@@ -31,6 +31,7 @@ private:
     SDL_Renderer* m_renderer;
     TextureManager m_textureMgr;
     EntityManager m_entityMgr;
+    InputManager m_inputMgr;
     vec2 m_windowSize;
 };
 

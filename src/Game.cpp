@@ -56,11 +56,13 @@ bool Game::isRunning()
 
 void Game::handleEvents()
 {
+    m_inputMgr.handleInputs(m_isRunning);
 }
 
 void Game::update()
 {
     SDL_GetWindowSize(m_window, &m_windowSize.x, &m_windowSize.y);
+    m_entityMgr.updateEntities();
 }
 
 void Game::render()

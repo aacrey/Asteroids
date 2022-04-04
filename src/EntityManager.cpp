@@ -4,6 +4,9 @@
 EntityManager::EntityManager()
 {}
 
+void EntityManager::updateEntities()
+{}
+
 void EntityManager::initBasicEntites(SDL_Renderer* p_renderer, TextureManager& p_textureMgr, vec2 p_windowSize)
 {
     /* initialize background */

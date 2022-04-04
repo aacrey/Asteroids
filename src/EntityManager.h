@@ -13,6 +13,7 @@ public:
     EntityManager();
 
     void initBasicEntites(SDL_Renderer* p_renderer, TextureManager& p_textureMgr, vec2 p_windowSize);
+    void updateEntities();
     std::vector<Entity>& getEntities();
 
 private:
