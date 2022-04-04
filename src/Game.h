@@ -8,7 +8,8 @@
 #include <SDL.h>
 #include <SDL_image.h>
 #include "TextureManager.h"
-#include "Entity.h"
+#include "EntityManager.h"
+#include "InputManager.h"
 #include "vec2.h"
 
 class Game
@@ -25,13 +26,11 @@ public:
     void clean();
 
 private:
-    void initBasicEntites();
-
     bool m_isRunning;
     SDL_Window* m_window;
     SDL_Renderer* m_renderer;
     TextureManager m_textureMgr;
-    std::vector<Entity> m_entities;
+    EntityManager m_entityMgr;
     vec2 m_windowSize;
 };
 
