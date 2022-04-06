@@ -4,6 +4,7 @@ add_executable(${PROJECT_NAME} main.cpp
                                Entity.h Entity.cpp 
                                EntityManager.h EntityManager.cpp 
                                InputManager.h InputManager.cpp 
+                               RenderManager.h RenderManager.cpp
                                vec2.h)
 
 add_dependencies(${PROJECT_NAME} SDL2main SDL2)

@@ -21,6 +21,12 @@ This project is still in progress and far from ready. I will continue working on
  - Run `cmake --build .` to build the binaries
  - The executable, called `Asteroids` will be in the _build/bin_ folder, along with the necessary .dll-s
 
+## Controls
+
+ - Right and left arrow keys to rotate the ship
+ - Up arrow key to accelerate ship
+ - ESC to close game
+
 ## Tests
 
  - Tested on Windows 10
@@ -29,9 +35,10 @@ This project is still in progress and far from ready. I will continue working on
 
 - [ ] Start documentation
 - [ ] Increase test coverage
-- [ ] Handle inputs
+- [ ] Create resizable window
 - [ ] Proper Entity Component System
 - [ ] Add collision detection
+- [ ] Enemy objects' better random moving direction
 - [ ] Refactor to better match the Model-View-Component pattern and use more modern C++ feature if possible
 - [ ] Main menu with settings, like framerate cap or turn music on/off
 - [ ] Include audio

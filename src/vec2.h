@@ -15,6 +15,11 @@ struct vec2
         y = other.y;
     }
 
+    vec2 operator+(const vec2& other)
+    {
+        return vec2((x + other.x), (y + other.y));
+    }
+
     bool operator==(const vec2& other)
     {
         if(other.x == x && other.y == y)

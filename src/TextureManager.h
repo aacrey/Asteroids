@@ -10,10 +10,13 @@
 class TextureManager
 {
 public:
+
     TextureManager();
     ~TextureManager();
 
-    SDL_Texture* getTextureFromImg(std::string imgName, SDL_Renderer *renderer);
+    void setRenderer(SDL_Renderer* p_renderer);
+
+    SDL_Texture* getTextureFromImg(std::string imgName);
 
     TextureManager(const TextureManager& other) = delete;
     void operator=(TextureManager const& other) = delete;
@@ -21,6 +24,7 @@ public:
 private:
     SDL_Texture* findTexture(std::string name);
 
+    SDL_Renderer* m_renderer;
     std::unordered_map<std::string, SDL_Texture*> m_textures;
 };
 

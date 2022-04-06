@@ -10,14 +10,24 @@
 class EntityManager
 {
 public:
-    EntityManager();
+    EntityManager(std::shared_ptr<TextureManager> p_textureMgr);
 
-    void initBasicEntites(SDL_Renderer* p_renderer, TextureManager& p_textureMgr, vec2 p_windowSize);
-    void updateEntities();
+    void initBasicEntites(vec2 p_windowSize);
+
+    void deleteEnemiesLeavingViewport(vec2& p_windowSize);
+    void generateEnemyEntities(unsigned int p_level, vec2& p_windowSize);
+    void movePlayerEntity(int p_value);
+
+    void rotatePlayerEntity(std::string p_playerName, int p_value);
+    void updatePlayerEntityTexture(std::string p_playerName, bool isMoving);
+
+    void updateAllEntityPositions();
+
     std::vector<Entity>& getEntities();
 
 private:
-    std::vector<Entity> m_entities; 
+    std::vector<Entity> m_entities;
+    std::shared_ptr<TextureManager> m_textureMgr;
 };
 
 

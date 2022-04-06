@@ -1,12 +1,17 @@
 #include "TextureManager.h"
 
-TextureManager::TextureManager()
+TextureManager::TextureManager() : m_renderer(nullptr)
 {}
 
 TextureManager::~TextureManager()
 {}
 
-SDL_Texture* TextureManager::getTextureFromImg(std::string imgName, SDL_Renderer *renderer)
+void TextureManager::setRenderer(SDL_Renderer* p_renderer)
+{
+    m_renderer = p_renderer;
+}
+
+SDL_Texture* TextureManager::getTextureFromImg(std::string imgName)
 {
     SDL_Texture* texture = findTexture(imgName);
     if(!texture)
@@ -39,7 +44,7 @@ SDL_Texture* TextureManager::getTextureFromImg(std::string imgName, SDL_Renderer
             }
         }
 
-        texture = SDL_CreateTextureFromSurface(renderer, surface);
+        texture = SDL_CreateTextureFromSurface(m_renderer, surface);
         SDL_FreeSurface(surface);
 
         m_textures[imgName] = texture;

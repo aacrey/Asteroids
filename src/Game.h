@@ -10,6 +10,7 @@
 #include "TextureManager.h"
 #include "EntityManager.h"
 #include "InputManager.h"
+#include "RenderManager.h"
 #include "vec2.h"
 
 class Game
@@ -29,9 +30,10 @@ private:
     bool m_isRunning;
     SDL_Window* m_window;
     SDL_Renderer* m_renderer;
-    TextureManager m_textureMgr;
-    EntityManager m_entityMgr;
-    InputManager m_inputMgr;
+    std::shared_ptr<TextureManager> m_textureMgr;
+    std::shared_ptr<EntityManager> m_entityMgr;
+    std::shared_ptr<InputManager> m_inputMgr;
+    RenderManager m_renderMgr;
     vec2 m_windowSize;
 };
 
