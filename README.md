@@ -24,8 +24,8 @@ This project is still in progress and far from ready. I will continue working on
 ## Controls
 
  - Right and left arrow keys to rotate the ship
- - Up arrow key to accelerate ship
- - ESC to close game
+ - Up arrow key to move the ship forward
+ - ESC to close the game
 
 ## Tests
 
@@ -35,10 +35,11 @@ This project is still in progress and far from ready. I will continue working on
 
 - [ ] Start documentation
 - [ ] Increase test coverage
+- [ ] Handle multiple key presses at the same time
 - [ ] Create resizable window
 - [ ] Proper Entity Component System
 - [ ] Add collision detection
-- [ ] Enemy objects' better random moving direction
+- [ ] Enemy and player objects' better movement
 - [ ] Refactor to better match the Model-View-Component pattern and use more modern C++ feature if possible
 - [ ] Main menu with settings, like framerate cap or turn music on/off
 - [ ] Include audio
